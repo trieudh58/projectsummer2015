@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+        input.ng-invalid.ng-dirty{border:1px solid red;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class = "row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><center><strong>Login with your account</strong></center></div>
+                <div class="panel-body">
+                    <form name = "frm" class = "navbar-form navbar-left" action = "login.php" method="POST" role = "form">
+                        <table role = "presentation">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>Email</label>
+                                    </td>
+                                    <td>
+                                        <label>Password</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class = "form-group">
+                                            <input type = "email" class = "form-control" placeholder="example@gmail.com" name = "email" ng-model = "user.email" required>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class = "form-group">
+                                            <input type = "password" class = "form-control" placeholder="******" name = "password" ng-model = "user.password" required ng-minlength = "6">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br/>
+                                        <button id="login" type="submit" class="btn btn-default">Login</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>
